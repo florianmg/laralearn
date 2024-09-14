@@ -7,7 +7,7 @@
     <ul>
         @foreach($posts as $post)
             <li>
-                <a class="underline hover:text-blue-500" href="{{ route('blog.show', ['slug' => $post->slug, 'id' => $post->id]) }}">{{ $post->title }}</a>
+                <a class="underline hover:text-blue-500" href="{{ route('blog.show', ['post' => $post->slug]) }}">{{ $post->title }}</a>
             </li>
         @endforeach
     </ul>
